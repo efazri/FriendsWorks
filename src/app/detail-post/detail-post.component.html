@@ -1,0 +1,45 @@
+<div>
+  <mat-toolbar class="toolbar">
+      <a routerLink="/home" style="text-decoration: none; color: black; font-family: Cabin, sans-serif;">Friendswork</a>
+      <button mat-raised-button><a routerLink="/dashboard" style="text-decoration: none;" (click) ="logout()">Logout</a></button>
+  </mat-toolbar>     
+</div>
+<div class="home-container">
+    <div class="home-box" >
+        <mat-card>
+            <a (click) = "backLoc()" style="float: right; text-decoration: none; color: gray ;"> X </a>
+            <div *ngIf ="loading" class="progress-bar-container"> 
+              <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </div>
+            <div style="display: flex; flex-flow: row;" *ngIf ="!loading">
+                <img mat-card-image src={{post.image}} alt="Photo of a Shiba Inu" style="width: 50%; margin-top: 3%; margin-left: 1%;" class="detail-image-style">
+                <mat-card-content style="margin-left: 10%; margin-top: 3%; width: 120%;" class="text-detail">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image" >
+                          <img src={{post.owner.picture}} alt="user" class="avatar-img" routerLink="/user/{{post.owner.id}}">
+                        </div>
+                        <mat-card-title routerLink="/user/{{post.owner.id}}" style="font-size: 100%; margin-top: 10%;">{{post.owner.firstName}} {{post.owner.lastName}}</mat-card-title>
+                      </mat-card-header>
+                  <p id="caption-text">{{ post.text }}</p>
+                  <p style="text-align: left;">{{post.likes}} likes</p>
+                  <hr>
+                  <div>
+                      <button mat-icon-button>
+                          <mat-icon matSuffix (click) = "likePost()" [style.color]="likesColor">{{ likesIcon }}</mat-icon>
+                      </button>
+                      <button mat-icon-button>
+                        <mat-icon matSuffix >chat_bubble_outline</mat-icon>
+                      </button>
+                  </div>
+                  <hr>
+                  <p style="text-align: left;">comments</p>
+                  <div *ngFor="let comment of comments" style="width: 100%; margin-top: 3%; text-align: left;">
+                    <mat-card>
+                      <p style="text-align: left;">{{comment.message}}</p>
+                    </mat-card>
+                  </div>
+                </mat-card-content>
+            </div>
+        </mat-card>
+    </div>
+</div>

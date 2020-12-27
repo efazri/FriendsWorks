@@ -1,0 +1,481 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+img { width: 100%}
+
+//<--- for Dashboard ---->//
+@media only screen and (min-width: 1180px) {
+    .text-container{
+        margin-top: 15%;
+        align-items: center;
+    }
+    .text-container h1 {
+        font-family: Cabin, sans-serif; 
+        font-size: 400%;
+    }
+    .dashboard-container {
+        margin-top: -20vh;
+    }
+    .dashboard-img {
+        margin-top: 24%;
+    }
+}
+
+@media only screen and (max-width: 1179px) {
+    .text-container{
+        margin-top: 15%;
+        align-items: center;
+    }
+    .text-container h1 {
+        font-family: Cabin, sans-serif; 
+        font-size: 250%;
+    }
+    .text-container p {
+        margin-top: -5%;
+        font-size: 65%;
+    }
+    .dashboard-img {
+        margin-top: 24%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .text-container{
+        margin-top: 15%;
+        align-items: center;
+    }
+    .text-container h1 {
+        font-family: Cabin, sans-serif; 
+        font-size: 150%;
+    }
+    .text-container p {
+        margin-top: -10%;
+        font-size:40%;
+    }
+    .text-container button {
+        width: 10px;
+        font-size: 50%;
+        text-align: center;
+    }
+    .dashboard-container {
+        margin-top: 20vh;;
+    }
+}
+
+
+//<--- for Dashboard ---->//
+@media only screen and (min-width: 1180px) {
+    .login-page{
+        height: 100%;
+        background:linear-gradient(#9FFFEF , rgb(242, 142, 242));
+        padding: 10%;
+    }
+    .box{
+        width: 30%;
+        margin: auto;
+        background-color:hsla(16,0%,90%,0.3);
+    }
+    .box div {
+        text-align: center;
+    }
+    
+    .box div h1 {
+        font-family: Cabin, sans-serif;
+        font-size: 250%;
+        color: #535353;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 1179px) {
+    .login-page{
+        height: 100%;
+        background:linear-gradient(#9FFFEF , rgb(242, 142, 242));
+        padding: 10%;
+    }
+    .box{
+        width: 35%;
+        margin: auto;
+        background-color:hsla(16,0%,90%,0.3);
+    }
+    .box div {
+        text-align: center;
+    }
+    
+    .box div h1 {
+        font-family: Cabin, sans-serif;
+        font-size: 250%;
+        color: #535353;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login-page{
+        height: 100%;
+        background:linear-gradient(#9FFFEF , rgb(242, 142, 242));
+        padding: 10%;
+    }
+    .box{
+        width: 30%;
+        margin: auto;
+        background-color:hsla(16,0%,90%,0.3);
+    }
+    .box div {
+        text-align: center;
+    }
+    
+    .box div h1 {
+        font-family: Cabin, sans-serif;
+        font-size: 150%;
+        color: #535353;
+        margin-bottom: 10%;
+    }
+
+    .box div p {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .login-page{
+        height: 100%;
+        background:linear-gradient(#9FFFEF , rgb(242, 142, 242));
+        padding: 20%;
+    }
+    .box{
+        width: 100%;
+        margin: auto;
+        background-color:hsla(16,0%,90%,0.3);
+        margin-top: 5vh;
+    }
+    .box div {
+        text-align: center;
+    }
+    
+    .box div h1 {
+        font-family: Cabin, sans-serif;
+        font-size: 150%;
+        color: #535353;
+        margin-bottom: 10%;
+    }
+
+    .box div p {
+        font-size: 80%;
+    }
+}
+
+
+
+//<--- for Detail Post ---->//
+@media only screen and (min-width: 1180px){
+    .home-container{
+        margin-top: 7%;
+    }
+    .home-box{
+        width: 50%;
+        margin: auto;
+    }
+    .progress-bar-container{
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+        padding: 33%;
+    }
+}
+
+@media only screen and (max-width: 1179px){
+    .home-container{
+        margin-top: 10%;
+    }
+    .home-box{
+        width: 50%;
+        margin: auto;
+    }
+    .progress-bar-container{
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+        padding: 33%;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .home-container{
+        margin-top: 20vh;
+    }
+    .home-box{
+        width: 70%;
+        margin: auto;
+    }
+    .progress-bar-container{
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+        padding: 33%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .home-container{
+        margin-top: 20vh;
+    }
+    .home-box{
+        width: 70%;
+        margin: auto;
+    }
+    .progress-bar-container{
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+        padding: 47%;
+    }
+    .detail-image-style{
+        height: 50% !important;
+        margin-top: 40% !important;
+    }
+    .text-detail{
+        margin-left: 10%;
+        margin-top: 3%; 
+        width: 80%;
+    }
+    .content-container{
+        width: 70%;
+        height: 60% !important;
+    }
+    .comment-box{
+        width: 50%; 
+        height: 20%;
+        margin-top: 3%; 
+        text-align: left;
+    }
+    .comment-box mat-card{
+        font-size: 10%;
+    }
+
+}
+
+
+.container {
+    display: flex;
+}
+.toolbar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-table;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 100%;
+    
+}
+
+//<--- User Page --->//
+@media only screen and (min-width: 1180px){
+    .avatar-img{
+        border-radius: 50%;
+        width: 100%;
+    }
+    .user-avatar{
+        text-align: center;
+    }
+    .avatar-user{
+        width: 100% !important;
+        border-radius: 50%;
+        image-rendering: auto;
+    }
+    .header-user-container{
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .profile-info{
+        display: flex; 
+        flex-flow: column; 
+        margin-left: 5%;
+    }
+    .post-card {
+        display: flex; 
+        flex-flow: row wrap; 
+        width: 100%; 
+        margin-top: 3%; 
+        padding: 5%; 
+        margin: auto; 
+        justify-content: center;
+    }
+    .post-card :hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        width: 200%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1179px){
+    .avatar-img{
+        border-radius: 50%;
+        width: 100%;
+    }
+    .user-avatar{
+        text-align: center;
+    }
+    .avatar-user{
+        width: 100% !important;
+        border-radius: 50%;
+        image-rendering: auto;
+    }
+    .header-user-container{
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .profile-info{
+        display: flex; 
+        flex-flow: column; 
+        margin-left: 5%;
+    }
+    .post-card {
+        display: flex; 
+        flex-flow: row wrap; 
+        width: 100%; 
+        margin-top: 3%; 
+        padding: 5%; 
+        margin: auto; 
+        justify-content: center;
+    }
+    .post-card :hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        width: 200%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .user-avatar{
+        text-align: center;
+    }
+    .avatar-user{
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 70% !important;
+        border-radius: 50%;
+        image-rendering: auto;
+    }
+    .header-user-container{
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .profile-info{
+        display: flex; 
+        flex-flow: column; 
+        margin-left: 5%;
+    }
+    .profile-info h2{
+        font-size: 100%;
+        margin-bottom: -6%;
+        margin-top: 10%;
+    }
+    .profile-info p{
+        font-size: 70%;
+        margin-bottom: -6%;
+        margin-top: 10%;
+    }
+    .post-card {
+        display: flex; 
+        flex-flow: row wrap; 
+        width: 100%; 
+        margin-top: 3%; 
+        padding: 5%; 
+        margin: auto; 
+        justify-content: center;
+    }
+    .post-card :hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        width: 200%;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+    .error-container{
+        padding: 5%;
+        text-align: center;
+    }
+    .error-container img{
+        width: 30%;
+    }
+    .error-info {
+        margin-top: -5%;
+        text-align: center;
+    }
+    .error-info h1 {
+        font-size: 150%;
+        font-family: Cabin, sans-serif;
+    }
+}
+
+
+@media only screen and (max-width: 599px){
+    .error-container{
+        padding: 5%;
+        text-align: center;
+        margin-top: 30%;
+    }
+    .error-container img{
+        width: 30%;
+    }
+    .error-info {
+        margin-top: -5%;
+        text-align: center;
+    }
+    .error-info h1 {
+        font-size: 100%;
+        font-family: Cabin, sans-serif;
+    }
+}
+
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 5%;
+}
+.example-header-image {
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 7%;
+}
+.user-name{
+    font-size: 1%;
+}
+.card-actions{
+    text-align: left;
+}
+.caption-container{
+    display:unset;
+    font-size: 85%;
+}
+#caption-text{
+    text-align: left;
+}
+

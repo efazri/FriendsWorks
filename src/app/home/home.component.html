@@ -1,0 +1,31 @@
+<div>
+  <mat-toolbar class="toolbar">
+      <a routerLink="/home" style="text-decoration: none; color: black; font-family: Cabin, sans-serif;">Friendswork</a>
+      <button mat-raised-button><a routerLink="/dashboard" style="text-decoration: none;" (click) = "logout()">Logout</a></button>
+  </mat-toolbar>     
+</div>
+<div class="home-container">
+    <div class="home-box" >
+        <mat-card class="example-card" *ngFor="let picture of pictures" style="margin: auto; margin-bottom: 3%;">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image" >
+                <img src={{picture.owner.picture}} alt="user" class="avatar-img">
+              </div>
+              <mat-card-title routerLink="/user/{{picture.owner.id}}" style="font-size: 100%; margin-top: 10%;">{{picture.owner.firstName}} {{picture.owner.lastName}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src={{picture.image}} alt="Photo of a Shiba Inu" routerLink="/post/{{picture.id}}">
+            <mat-card-content class="card-actions">
+              <div>
+                <mat-icon matSuffix (click) = "likePost(picture.id)" style="margin-right: 3%;">{{ likeStyle }}</mat-icon>
+                <a routerLink="/post/{{picture.id}}"><mat-icon matSuffix >chat_bubble_outline</mat-icon></a>
+                <!-- <a (click)="likePost(picture.id)" ></a>
+                <a (click)="likePost(picture.id)" ><mat-icon matSuffix style="text-decoration: none; color: wheat;"> sms_border</mat-icon></a> -->
+              </div>
+              <p>{{picture.likes}} likes</p>
+            </mat-card-content>
+            <mat-card-content >
+              <p id="caption-text">{{picture.text}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
